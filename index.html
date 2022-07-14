@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather for</title>
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ddc3ee268a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather app">
+        <form class="search-form" id="search-form">
+        <label for="text"> The Weather for: </label>
+        <div class="row">
+          <div class="col-3">
+            <input 
+                type="search" 
+                placeholder="Search your city" 
+                id="city-input" 
+                class="form-control shadow-sm"
+                />
+          </div>
+          <div class="col-1">
+            <input
+            type="submit"
+            value="Search"
+            class="form-control btn btn-outline-light btn shadow-sm"
+            />
+          </div>
+          <div class="col-1">
+            <input
+            type="button"
+            value="Current"
+            id="city-current"
+            class="form-control btn btn-outline-info btn shadow-sm"
+            />
+          </div>
+        </div>
+        </form>
+       
+        <div class="row">
+          <div class="col-1">
+            <h1><i class="fas fa-home home-icon"></i></h1>
+          </div>
+            <div class="col-6">
+              <h1 id="city">
+                Odessa
+              </h1>
+            </div>
+        </div>
+        
+        <div class="row">
+         <div class="col-4">
+        <h3>
+          <span>Currently: </span>
+          <span class="temperature" id="temperature-cur">19</span
+            ><span class="units">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span> 
+        </h3>
+        <h4 id="curdata"></h4>
+       </div>
+      <div class="col-6">
+        <ul>
+          <li id="precipitation-cur">
+            Precipitation: 5%
+          </li>
+          <li id="humidity-cur">
+            Humidity: 60%
+          </li>
+          <li id="wind-cur">
+            Wind: 5 km/h
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+          <h1><i class="far fa-calendar-alt"></i></h1>
+        </div>
+
+    <div class="card-group">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Saturday</h5>
+          <p class="card-text">
+            <i class="fas fa-cloud-rain"></i>
+          </p>
+          <p class="card-text">
+            <small class="text-muted">24°/19°</small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Sunday</h5>
+          <p class="card-text">
+            <i class="fas fa-cloud-sun-rain"></i>
+          </p>
+          <p class="card-text">
+            <small class="text-muted">23°/16°</small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Monday</h5>
+          <p class="card-text">
+            <i class="fas fa-cloud-sun-rain"></i>
+          </p>
+          <p class="card-text">
+            <small class="text-muted">24°/18°</small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Tushay</h5>
+          <p class="card-text">
+            <i class="fas fa-cloud-sun-rain"></i>
+          </p>
+          <p class="card-text">
+            <small class="text-muted">23°/16°</small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Wednesday</h5>
+          <p class="card-text">
+            <i class="fas fa-temperature-high"></i>
+          </p>
+          <p class="card-text">
+            <small class="text-muted">28°/21°</small>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </body>
+  <script src="src/app.js"></script>
+</html>

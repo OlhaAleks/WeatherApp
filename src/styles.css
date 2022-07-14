@@ -1,0 +1,67 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form {
+  display: block;
+  margin: 20px 0;
+  padding: 20px;
+  color: #6c5b7c;
+}
+li {
+  font-size: 18px;
+  font-weight: 400;
+  height: 20px;
+  list-style: none;
+  line-height: 2;
+}
+.placeholder {
+  border: 2px solid red;
+  border-radius: 25px;
+}
+.container {
+  background-image: url(../images/sky-blueviolet.jpg);
+  height: 600px;
+  background-position: right;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 20px 500px 50px 50px;
+  background-blend-mode: normal;
+}
+.home-icon {
+  color: #c06c84;
+  opacity: 0.6;
+}
+.col-1 {
+  color: #8b747b;
+}
+.col-6 {
+  color: #871d3b;
+}
+.col-4 {
+  color: #871d3b;
+}
+.fa-calendar-alt {
+  color: #c06c84;
+  opacity: 0.6;
+}
+.photo {
+  display: block;
+  width: 200px;
+}
+.card {
+  opacity: 0.8;
+}
+.card-title {
+  color: #f67280;
+}
+.card-text {
+  color: #6c5b7c;
+}
+.text-muted {
+  color: #c06c84;
+}
+button:focus{
+  outline:none !important;
+  }
